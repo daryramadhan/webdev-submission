@@ -1,61 +1,63 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
-.main-title {
-    padding: 100px;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(94, 94, 94);
-    background-image: url(asset/christopher-gower-m_HRfLhgABo-unsplash.jpg);
-    background-size: cover;
-    height: 100%;
-}
-
-.main-title > h1 {
-    color: white;
-    font-weight: lighter;
-}
-
-/*Top Navbar*/
-nav li {
-    display: inline;
-    margin-right: 20px;
-    list-style-type: none;
-}
-
+/* ======== navbar ======== */
 nav {
-    padding: 20px;
-    background-color: rgb(56, 56, 56);
-    text-align: center;
-    position: sticky;
+  text-align: center;
+  padding: 20px;
+  background-color: powderblue;
+}
+
+nav :hover {
+  color: grey;
+  -ms-transform-origin-x: 10px;
+}
+
+nav :active {
+  color: blue;
+  text-decoration: none;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
 }
 
 nav a {
-    font-size: 14px;
-    font-weight: 200;
-    text-decoration: none;
-    color: white;
- }
-
-/* main */
-main {
-    height: 700px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
 }
 
- /* footer */
+/* Main Title */
+.main-title {
+  margin: 60px auto 60px 150px;
+  padding: 20px;
+}
+
+.main-title h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main-title p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.main-title h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Footer */
 footer {
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 200;
-}
-
-footer span {
-    font-weight: 400;
+  padding: 20px;
+  text-align: center;
+  background-color: grey;
 }
