@@ -1,19 +1,28 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* header {
+  background-image: url(asset/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+  background-size: 100%;
+  background-position: cover;
+  background-blend-mode: multiply;
+} */
+
+main {
+  overflow: auto;
+  margin: 0px 150px;
 }
 
 /* ======== navbar ======== */
 nav {
   text-align: center;
   padding: 20px;
-  background-color: powderblue;
-}
-
-nav :hover {
-  color: grey;
-  -ms-transform-origin-x: 10px;
+  border-bottom: solid black;
+  border-width: thin;
 }
 
 nav :active {
@@ -27,6 +36,10 @@ nav li {
   margin-right: 20px;
 }
 
+nav li :hover {
+  text-decoration: underline;
+}
+
 nav a {
   color: black;
   text-decoration: none;
@@ -36,28 +49,120 @@ nav a {
 
 /* Main Title */
 .main-title {
-  margin: 60px auto 60px 150px;
+  /* margin: 60px auto 60px 150px; */
+  margin: 100px 150px;
+  text-align: center;
   padding: 20px;
 }
 
 .main-title h2 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
 }
 
 .main-title p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .main-title h1 {
   font-size: 40px;
   font-weight: 700;
+  margin: 10px 0;
+}
+
+/* content */
+p {
+  line-height: 2;
+}
+
+#about {
+  margin-bottom: 10px;
+}
+
+/* article */
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  border: solid black;
+  border-width: thin;
+  /* border-radius: 5px; */
+  padding: 40px;
+  margin: 20px;
+  background-color: white;
+}
+
+article ul {
+  padding-left: 20px;
+}
+
+article li {
+  font-size: 18px;
+}
+
+article h2 {
+  font-weight: 600;
+}
+
+#content {
+  float: left;
+  width: 60%;
+}
+
+aside {
+  float: right;
+  width: 40%;
 }
 
 /* Footer */
 footer {
+  font-size: 14px;
+  margin-top: 100px;
   padding: 20px;
   text-align: center;
-  background-color: grey;
+  border-top: solid black;
+  border-width: thin;
+}
+
+/* aside */
+aside > article {
+  text-align: center;
+}
+
+aside article img {
+  margin-top: 20px;
+}
+
+.biodata-content {
+  font-size: 14px;
+}
+
+.biodata-content p {
+  margin-top: 10px;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon-socmed {
+  margin-top: 14px;
+}
+
+/* support */
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-title {
+    margin: 100px 20px;
+  }
+
+  main {
+    margin: 0 20px 0 20px;
+  }
 }
