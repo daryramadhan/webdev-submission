@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* header {
@@ -150,6 +151,10 @@ aside article img {
   margin-top: 14px;
 }
 
+.icon-socmed :hover {
+  transform: translateY(-10px);
+}
+
 /* support */
 @media screen and (max-width: 1000px) {
   #content,
@@ -165,4 +170,38 @@ aside article img {
   main {
     margin: 0 20px 0 20px;
   }
+}
+
+@media screen and (max-width: 600px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-title {
+    margin: 100px 20px;
+  }
+
+  main {
+    margin: 0 20px 0 20px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(207, 207, 207);
+  /* opacity: 0.2; */
+  /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #272727;
+  /* border-radius: 10px; */
 }
